@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>일정 추가</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>일정 추가</h1>
+  <form id="schedule-form">
+    <label>일정 종류:
+      <select name="type">
+        <option value="산책">산책</option>
+        <option value="식사">식사</option>
+        <option value="미용">미용</option>
+        <option value="병원">병원</option>
+        <option value="기타">기타</option>
+      </select>
+    </label><br>
+
+    <label>날짜:
+      <input type="date" name="date">
+    </label><br>
+
+    <label>시간:
+      <input type="time" name="time">
+    </label><br>
+
+    <label>메모:
+      <textarea name="memo"></textarea>
+    </label><br>
+
+    <button type="submit">저장</button>
+    <button type="reset">취소</button>
+  </form>
+  <a href="index.html">← 메인으로 돌아가기</a>
+
+  <script src="script.js"></script>
+</body>
+</html>
